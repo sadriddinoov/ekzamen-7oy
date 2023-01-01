@@ -1,0 +1,19 @@
+[
+    {
+        "event_Id": 1,
+        "data": "2022-12-31",
+        "time": "12:00",
+        "category": "IT",
+        "subcategory": "Web dasturlash",
+        "online_or_ofline": "online",
+        "link": "https://youtu.be/MCtYohN6KfA",
+        "owner_name": "Ali",
+        "profesion": "Frontent developer",
+        "phone": "+998977008014",
+        "description": "Alining web dasturlash boyicha master klas. Siz bu yerda JS,CSS,HTML5,BOOTSTRAP,GIT haqida tushuncha olasiz",
+        "img": "images.jpg",
+        "body": "Alining web dasturlash boyicha master klasi",
+        "status": false,
+        "views": 0
+    }
+]
