@@ -6,6 +6,7 @@ import validate from "../middleware/validate.js";
 const router = Router();
 
 router.post("/admins", validate, adminController.LOGIN)
+router.get("/admins/:token", adminController.ADMINKA)
 
 
 export default router;

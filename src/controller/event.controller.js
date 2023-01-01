@@ -14,7 +14,7 @@ let POST = (req, res) => {
 
     let newEvent = {
         event_Id: events.at(-1)?.event_Id + 1 || 1,
-        data, time, category, subcategory, online_or_ofline, link, owner_name, profesion, phone, description, img: img.name, body, status: false, views: 0
+        data, time, category, subcategory, online_or_ofline, link, owner_name, profesion, phone, description, img: img.name, body, status: falseшз
     }
 
     events.push(newEvent)
@@ -33,7 +33,7 @@ let QUEYRY = (req, res) => {
   let filteredUser = {};
   
     if (data && online_or_ofline && owner_name && subcategory) {
-      filteredUser = events.filter(event => data.toString.toUpperCase == event.data.toString.toUpperCase && online_or_ofline.toString.toUpperCase() == event.online_or_ofline.toString.toUpperCase() && owner_name.toString.toUpperCase == event.owner_name.toString.toUpperCase && subcategory.toString.toUpperCase == event.subcategory.toString.toUpperCase)
+      filteredUser = events.filter(event => data.toString.toUpperCase == event.data.toString.toUpperCase && online_or_ofline.toString.toUpperCase == event.online_or_ofline.toString.toUpperCase && owner_name.toString.toUpperCase == event.owner_name.toString.toUpperCase && subcategory.toString.toUpperCase == event.subcategory.toString.toUpperCase)
     }
 
     if (data) {
@@ -55,9 +55,11 @@ let QUEYRY = (req, res) => {
     if (filteredUser.length) {
       res.status(200).json({status: 200, message: "ok", data: filteredUser})
     }else {
-      res.status(400).json({status: 400, message: "this event is not"})
+      res.status(400).json({status: 400, message: "this event is undefined"})
     }
   }
+
+
 
 
 export default {

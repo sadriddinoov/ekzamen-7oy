@@ -13,7 +13,6 @@
         "description": "Alining web dasturlash boyicha master klas. Siz bu yerda JS,CSS,HTML5,BOOTSTRAP,GIT haqida tushuncha olasiz",
         "img": "images.jpg",
         "body": "Alining web dasturlash boyicha master klasi",
-        "status": false,
-        "views": 0
+        "status": true
     }
 ]

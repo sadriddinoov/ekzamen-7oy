@@ -12,6 +12,11 @@ function write(fileName, data) {
   return true
 }
 
+process.DEFAULT = {};
+process.DEFAULT.pagination = {}
+process.DEFAULT.pagination.page = 1
+process.DEFAULT.pagination.limit = 5
+
 const PORT = 5000;
 
 
