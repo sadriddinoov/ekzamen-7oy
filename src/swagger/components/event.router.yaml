@@ -1,0 +1,63 @@
+components:
+  schemas: 
+    event:
+      Response: 
+        type: object
+        properties: 
+          event_Id:
+            type: integer
+          data: 
+            type: string
+          time: 
+            type: string
+          category:
+            type: string
+          subcategory :
+            type: string
+          online_or_ofline: 
+            type: string
+          link: 
+            type: string
+          owner_name: 
+            type: string
+          profesion: 
+            type: string
+          phone: 
+            type: string
+          description :
+            type: string
+          img: 
+            type: string
+          body: 
+            type: string
+          status: 
+            type: boolean
+          
+
+      Post:    
+        type: object
+        properties: 
+          data: 
+            type: string
+          time: 
+            type: string
+          category:
+            type: string
+          subcategory :
+            type: string
+          online_or_ofline: 
+            type: string
+          link: 
+            type: string
+          owner_name: 
+            type: string
+          profesion: 
+            type: string
+          phone: 
+            type: string
+          description :
+            type: string
+          img: 
+            type: file
+          body: 
+            type: string

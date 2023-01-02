@@ -1,0 +1,45 @@
+/admins:
+  post:
+    tags: 
+      - admins
+    requestBody:
+      description: Add new admin
+      content:
+         application/json:
+          schema: 
+            $ref: "#/components/schemas/admin/Post"
+      required: true      
+    responses:
+       "200": 
+        description: All admins
+        content:
+         application/json:
+           schema:
+             $ref: "#/components/schemas/admin/Response"
+
+/admins/{token}:
+   put:
+    tags:
+      - admins
+    parameters:
+       - name: token
+         in: path
+         description: update the status of event
+         required: true
+    requestBody:
+      description: Upate status
+      content:
+         application/json:
+          schema: 
+            $ref: "#/components/schemas/admin/Put"
+      required: true      
+    responses:
+        "200": 
+         description: All categories
+         content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/event/Response"
+    security:
+        - Bearer:
+            type: oauth2

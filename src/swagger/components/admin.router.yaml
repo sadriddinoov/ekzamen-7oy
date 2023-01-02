@@ -1,0 +1,27 @@
+components:
+  schemas: 
+    admin:
+      Response:
+        type: object
+        properties:
+          admin_Id:
+            type: integer
+          username: 
+            type: string
+          password: 
+            type: string
+      Post: 
+        type: object
+        properties: 
+          username: 
+            type: string
+          password: 
+            type: string
+
+      Put:
+        type: object
+        properties:
+          status: 
+            type: boolean
+          eventId: 
+            type: integer

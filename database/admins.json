@@ -8,5 +8,10 @@
         "admin_Id": 2,
         "username": "bilol",
         "password": "123456789"
+    },
+    {
+        "admin_Id": 3,
+        "username": "Bilol",
+        "password": "1234678765"
     }
 ]

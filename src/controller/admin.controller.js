@@ -42,9 +42,11 @@ let LOGIN = (req,res) => {
                 let { eventId, status } = req.body;
 
               
-               if (!token) {
-                throw new Error("token is required")
-               }
+                let { adminId } = jwt.verify(token);
+
+                if (!adminId) {
+                    throw new Error("token is required or token is invalid")
+                }
 
                if (!(eventId)) {
                 throw new Error("status and eventId is required")

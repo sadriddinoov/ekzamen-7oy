@@ -14,5 +14,37 @@
         "img": "images.jpg",
         "body": "Alining web dasturlash boyicha master klasi",
         "status": true
+    },
+    {
+        "event_Id": 2,
+        "data": "2023-1-01",
+        "time": "17:00",
+        "category": "IT",
+        "subcategory": "Web dasturlash",
+        "online_or_ofline": "offline",
+        "link": "https://youtu.be/MCtYohN6KfA",
+        "owner_name": "Bilol",
+        "profesion": "Becend developer",
+        "phone": "+998998508014",
+        "description": "Bilolning web dasturlash boyicha master klas. Siz bu yerda JS,CSS,HTML5,BOOTSTRAP,GIT haqida tushuncha olasiz",
+        "img": "images.jpg",
+        "body": "Bilolning web dasturlash boyicha master klasi",
+        "status": true
+    },
+    {
+        "event_Id": 3,
+        "data": "2022-02-01",
+        "time": "13:00",
+        "category": "Dizayn",
+        "subcategory": "UI/UX dizayn",
+        "online_or_ofline": "online",
+        "link": "http://google.com",
+        "owner_name": "Salim",
+        "profesion": "bekorchi",
+        "phone": "+998332222223",
+        "description": "Salimning materkalasi",
+        "img": "1654014799_2-celes-club-p-real-madrid-oboi-krasivie-2.jpg",
+        "body": "Salimning materkalasi",
+        "status": true
     }
 ]

@@ -1,0 +1,75 @@
+/events:
+  post:
+    tags: 
+      - events
+    requestBody:
+      description: Add new event
+      content:
+         multipart/form-data:
+          schema: 
+            $ref: "#/components/schemas/event/Post"
+      required: true      
+    responses:
+       "200": 
+        description: All events
+        content:
+         application/json:
+           schema:
+             $ref: "#/components/schemas/event/Response"
+  
+  get:
+    tags: 
+      - events
+    responses:
+      "200": 
+       description: All events
+       content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/category/Response"
+
+/event/filter:
+  get:
+    tags: 
+      - events
+    parameters:
+       - name: owner_name
+         in: query
+         description: Events to filter
+         required: false
+       - name: data
+         in: query
+         description: Events to filter
+         required: false
+       - name: online_or_ofline
+         in: query
+         description: Events to filter
+         required: false
+       - name: subcategory
+         in: query
+         description: Events to filter
+         required: false
+    responses:
+      "200": 
+       description: All events
+       content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/event/Response"
+
+/events/{id}:
+  get:
+    tags:
+      - events
+    parameters:
+       - name: id
+         in: path
+         description: get event with id
+         required: true
+    responses:
+        "200": 
+         description: All categories
+         content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/event/Response"
